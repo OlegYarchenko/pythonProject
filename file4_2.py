@@ -10,8 +10,6 @@ else:
     print(my_second_list)
     last_list_element = my_list.pop()
     sum_element = 0
-
     for list_element in my_second_list:
         sum_element += list_element
-
     print(sum_element * last_list_element)
