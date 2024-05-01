@@ -6,8 +6,8 @@ print(my_list)
 if my_list == []:
     print(0)
 else:
-    list_len = len(my_list)
-    my_second_list = my_list[0:list_len:2]
+    my_second_list = my_list[::2]
+    print(my_second_list)
     last_list_element = my_list.pop()
     sum_element = 0
 
