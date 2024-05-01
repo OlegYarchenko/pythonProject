@@ -4,7 +4,7 @@ my_list = [0, 1, 0, 12, 3]
 # my_list = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
 
 print(my_list)
-list_len = len(my_list) + 1
+list_len = len(my_list)
 
 for list_index in my_list:
     if list_index == 0:
