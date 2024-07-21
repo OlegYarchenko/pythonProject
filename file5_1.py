@@ -6,7 +6,6 @@ all_res_char =string.punctuation
 my_res_char_list = []
 for my_symb in all_res_char:
     my_res_char_list.append(my_symb)
-# my_digit_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 my_res_char_list.pop(-6)
 
 my_input = input("Введіть ім'я своєї змінної: ")
