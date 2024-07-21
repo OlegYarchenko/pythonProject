@@ -2,13 +2,10 @@ import keyword
 import string
 
 my_reserved_words = keyword.kwlist
-print(keyword.kwlist)
 all_res_char =string.punctuation
-print(all_res_char)
 my_res_char_list = []
 for my_symb in all_res_char:
     my_res_char_list.append(my_symb)
-print(my_res_char_list)
 my_digit_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 my_res_char_list.pop(-6)
 
