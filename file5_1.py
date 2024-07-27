@@ -17,8 +17,6 @@ if my_input in my_reserved_words:
     my_result = "False"
 elif my_input.isdigit():
     my_result = "False"
-elif my_input.isdigit():
-    my_result = "False"
 else:
     for my_check_symb in my_input:
         my_timer += 1
