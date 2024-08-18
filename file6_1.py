@@ -10,34 +10,35 @@ my_people_list = [
 
 people_age_list = []
 min_age = 1000
-list_age = []
-
+name_len = 0
+people_name_list = []
+sum_age = 0
+my_count = 0
 
 for dict_from_list in my_people_list:
-    # print(dict_from_list.items())
     check_age = dict_from_list["age"]
-    # print('1', check_age)
     if check_age < min_age:
         min_age = check_age
-        # print('2', min_age)
-        # if min_age == dict_from_list["age"]:
-        #     people_age_list.append(dict_from_list)
 
 for dict_from_list in my_people_list:
     if min_age == dict_from_list["age"]:
-        people_age_list.append(dict_from_list)
+        people_age_list.append(dict_from_list["name"])
 
-# for dict_from_list in my_people_list:
-#     # print(dict_from_list.items())
-#     check_age = dict_from_list["age"]
-#     if check_age not in list_age:
-#         list_age.append(check_age)
-#
-# for _ in list_age:
-#     if _ < min_age:
-#         min_age = _
-#         print(min_age)
+for dict_from_list in my_people_list:
+    check_len = len(dict_from_list["name"])
+    if check_len > name_len:
+        name_len = check_len
 
-# print("низ", min_age)
-# set_age = set(list_age)
-print(people_age_list)
+for dict_from_list in my_people_list:
+    if name_len == len(dict_from_list["name"]):
+        people_name_list.append(dict_from_list["name"])
+
+for dict_from_list in my_people_list:
+    sum_age += dict_from_list["age"]
+    my_count += 1
+
+print(
+    "Імена наймолодших:", people_age_list, "\n"
+    "Найдовші імена:", people_name_list, "\n"
+    "Середній вік людей", int(sum_age / my_count),
+)
